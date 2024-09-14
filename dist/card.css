@@ -1,0 +1,31 @@
+.card {
+  --border: 0.9375rem;
+  width: min(20rem, 100% - 3.4375rem);
+  margin-inline: auto;
+  padding: var(--spacing-200);
+  background-color: var(--clr-netural-100);
+  border-radius: var(--border);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+.card__img {
+  border-radius: var(--border);
+}
+.card__content {
+  text-align: center;
+}
+.card__main-text {
+  font-size: var(--fs-22);
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-700);
+  margin-block: var(--spacing-200);
+  padding: 0 var(--spacing-200);
+  line-height: 120%;
+}
+.card__sub-text {
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.2px;
+  color: var(--clr-netural-200);
+  margin-block-end: var(--spacing-300);
+  padding: 0 var(--spacing-200);
+  line-height: 140%;
+} /*# sourceMappingURL=card.css.map */

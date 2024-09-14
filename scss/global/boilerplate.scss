@@ -1,0 +1,53 @@
+@use "../util" as u;
+
+:root {
+  --clr-netural-200: hsl(220, 15%, 55%);
+  --clr-netural-100: hsl(0, 0%, 100%);
+
+  --clr-accent-100: hsl(212, 46%, 89%);
+  --clr-accent-500: hsl(228, 45%, 44%);
+  --clr-accent-700: hsl(218, 44%, 22%);
+
+  --ff-base: "Outfit", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-11: 0.7rem;
+  --fs-15: 0.9rem;
+  --fs-22: 1.3rem;
+
+  --spacing-200: #{u.rem(16)};
+  --spacing-300: #{u.rem(24)};
+  --spacing-500: u.rem(40);
+}
+
+//   RESET
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background-color: var(--clr-accent-100);
+  font-family: var(--ff-base);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-regular);
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* reset */
+  min-height: 100vh;
+  /* separation with footer */
+  flex-direction: column;
+  gap: u.rem(24);
+  font-style: normal;
+}

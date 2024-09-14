@@ -1,0 +1,38 @@
+@use "../util" as u;
+
+.card {
+  --border: #{u.rem(15)};
+
+  width: min(u.rem(320), calc(100% - u.rem(55)));
+  margin-inline: auto;
+  padding: var(--spacing-200);
+  background-color: var(--clr-netural-100);
+  border-radius: var(--border);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+
+  &__img {
+    border-radius: var(--border);
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__main-text {
+    font-size: var(--fs-22);
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent-700);
+    margin-block: var(--spacing-200);
+    padding: 0 var(--spacing-200);
+    line-height: 120%;
+  }
+
+  &__sub-text {
+    font-weight: var(--fw-regular);
+    letter-spacing: 0.2px;
+    color: var(--clr-netural-200);
+    margin-block-end: var(--spacing-300);
+    padding: 0 var(--spacing-200);
+    line-height: 140%;
+  }
+}
